@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Password Vault</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css" rel="stylesheet">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        padding: 20px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    /* Floating icons in the background */
+    .floating-icon {
+        position: absolute;
+        font-size: 2rem;
+        opacity: 0.15;
+        animation: float 20s linear infinite;
+    }
+
+    @keyframes float {
+        0% { transform: translateY(100vh) rotate(0deg); }
+        100% { transform: translateY(-100vh) rotate(360deg); }
+    }
+
+    .glass-card {
+        position: relative;
+        z-index: 10;
+        background: rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border-radius: 20px;
+        padding: 50px 40px;
+        text-align: center;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        max-width: 500px;
+        width: 100%;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .glass-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+    }
+
+    .btn-glass {
+        background: rgba(255, 255, 255, 0.2);
+        color: #fff;
+        border-radius: 12px;
+        padding: 12px 25px;
+        font-weight: 500;
+        border: none;
+        margin: 10px;
+        transition: 0.3s;
+        font-size: 1rem;
+    }
+
+    .btn-glass:hover {
+        background: rgba(255, 255, 255, 0.35);
+        transform: scale(1.05);
+    }
+
+    .btn-glass i {
+        margin-right: 8px;
+    }
+
+    @media(max-width: 576px) {
+        .glass-card {
+            padding: 40px 25px;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<!-- Floating icons in the background -->
+<i class="bi bi-shield-lock-fill floating-icon" style="left: 10%; animation-duration: 25s;"></i>
+<i class="bi bi-key-fill floating-icon" style="left: 25%; animation-duration: 30s;"></i>
+<i class="bi bi-person-lock-fill floating-icon" style="left: 40%; animation-duration: 22s;"></i>
+<i class="bi bi-lock-fill floating-icon" style="left: 60%; animation-duration: 28s;"></i>
+<i class="bi bi-gear-fill floating-icon" style="left: 75%; animation-duration: 24s;"></i>
+<i class="bi bi-shield-fill-check floating-icon" style="left: 85%; animation-duration: 26s;"></i>
+
+<div class="glass-card">
+    <h1><i class="bi bi-shield-lock-fill"></i> Password Vault</h1>
+    <p>Securely store all your passwords in one place. Only you have access!</p>
+
+    <a href="register.html" class="btn-glass"><i class="bi bi-person-plus-fill"></i> Register</a>
+    <a href="login.html" class="btn-glass"><i class="bi bi-box-arrow-in-right"></i> Login</a>
+</div>
+
+</body>
+</html>

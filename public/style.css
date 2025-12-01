@@ -1,0 +1,13 @@
+body {
+  background: #eef2f7;
+  font-family: Arial, sans-serif;
+}
+
+.box {
+  max-width: 450px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
