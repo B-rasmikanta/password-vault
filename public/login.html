@@ -112,7 +112,7 @@ document.getElementById("login-form").addEventListener("submit", async function(
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
 
-    const res = await fetch("http://localhost:5000/login", {
+    const res = await fetch("https://password-vault-vk39.onrender.com/login", {
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({username, password})
@@ -132,7 +132,7 @@ document.getElementById("login-form").addEventListener("submit", async function(
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
 
-    const res = await fetch("http://localhost:5000/login", {
+    const res = await fetch("https://password-vault-vk39.onrender.com/login", {
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({username, password})
